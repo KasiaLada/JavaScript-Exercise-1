@@ -53,29 +53,63 @@
 // showName("Asia", 36);
 // -------------------------
 // Exercise 1
-const numbers = [1, 2, 3, 4, 5, 6,3];
-console.log(numbers);
+// const numbers = [1, 2, 3, 4, 5, 6, 3];
+// console.log(numbers);
 
-for (let i = 0; i < numbers.length; i++) {
-	console.log(numbers[i]);
-}
+// for (let i = 0; i < numbers.length; i++) {
+// 	console.log(numbers[i]);
+// }
 
+// function math(arg1, arg2, arg3) {
+// 	console.log(arg1 + arg2 * arg3);
+// }
+// math(1, 2, 3);
 
-function math(arg1, arg2, arg3) {
-	console.log(arg1 + arg2 * arg3);
-}
-math(1, 2, 3);
+// if (numbers.length > 5) {
+// 	console.log(true);
+// } else {
+// 	console.log(false);
+// }
 
-if (numbers.length > 5) {
-	console.log(true);
-} else {
-	console.log(false);
-}
-
-
-
-
-for (let i = 0; i < numbers.length; i++) {
-	console.log(`Tablica z cyframi ma ${numbers.length} elementów`);
-}
+// for (let i = 0; i < numbers.length; i++) {
+// 	console.log(`Tablica z cyframi ma ${numbers.length} elementów`);
+// }
 // ___________________
+
+// const btn = document.querySelector('#btn');
+// const allP = document.querySelectorAll('p');
+// _________________________
+// Exercise
+const btn1 = document.querySelector('#btn1');
+const btn2 = document.querySelector('.btn2');
+console.log(btn1, btn2);
+// ------------------------
+
+// Dwa sposoby na osiągniecie tego samego
+// function showText(x) {
+// 	console.log(x);
+// }
+// showText(`Kliknieto przycisk 1`);
+
+// --
+// i
+function showText() {
+	console.log(`Kliknieto przycisk 1`);
+}
+showText();
+// ------------
+// Dwa sposoby na osiągniecie tego samego
+// function addNumber(x, y) {
+// 	console.log(x+y);
+// }
+// addNumber(2, 2);
+// i
+// ale nie wiem czemu nie działa - napisane jak u Majka
+function addNumber() {
+	console.log(2 + 2);
+}
+
+btn1.addEventListener('click', showText);
+
+btn2.addEventListener('click', addNumber);
+// A tutaj przy wywołaniu funkcji działa
